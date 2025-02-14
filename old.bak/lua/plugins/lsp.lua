@@ -173,7 +173,7 @@ return { -- LSP Configuration & Plugins
       cssls = {},
       ltex = {},
       texlab = {},
-      gopls = {},
+      -- gopls = {},
     }
 
     -- Ensure the servers and tools above are installed

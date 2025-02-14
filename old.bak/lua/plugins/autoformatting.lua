@@ -19,13 +19,13 @@ return {
         'shfmt', -- Shell formatter
         'checkmake', -- linter for Makefiles
         'ruff', -- Python linter and formatter
-        'golangci-lint',
-        'gopls',
-        'gofumpt',
-        'golines',
-        'gomodifytags',
-        'gotests',
-        'goimports'
+        -- 'golangci-lint',
+        -- 'gopls',
+        -- 'gofumpt',
+        -- 'golines',
+        -- 'gomodifytags',
+        -- 'gotests',
+        -- 'goimports'
       },
       -- auto-install configured formatters & linters (with null-ls)
       automatic_installation = true,

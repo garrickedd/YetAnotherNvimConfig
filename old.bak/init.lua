@@ -1,7 +1,6 @@
 require 'core.options'
 require 'core.keymaps'
-
-
+require 'core.snippets'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -16,9 +15,27 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-  require 'plugins.colorscheme',
+  -- Colorscheme
+  {
+    'EdenEast/nightfox.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require 'plugins.colorscheme'
+    end,
+  },
+  -- require 'plugins.colortheme',
   require 'plugins.neotree',
   require 'plugins.bufferline',
   require 'plugins.lualine',
+  require 'plugins.treesitter',
+  require 'plugins.telescope',
+  require 'plugins.lsp',
+  require 'plugins.autocomplete',
+  require 'plugins.autoformatting',
+  require 'plugins.gitsigns',
+  require 'plugins.alpha',
+  require 'plugins.indent-blankline',
+  require 'plugins.misc',
+  require 'plugins.toggleterm',
 }
-
