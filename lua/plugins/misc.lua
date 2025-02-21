@@ -41,11 +41,11 @@ return {
 		-- comments
 		"numToStr/Comment.nvim",
 	},
-	{
-		-- Discord
-		"andweeb/presence.nvim",
-		config = function()
-			require("plugins.presence")
-		end,
-	},
+	-- {
+	-- 	-- Discord
+	-- 	"andweeb/presence.nvim",
+	-- 	config = function()
+	-- 		require("plugins.presence")
+	-- 	end,
+	-- },
 }
